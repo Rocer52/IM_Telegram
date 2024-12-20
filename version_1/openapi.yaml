@@ -1,0 +1,51 @@
+openapi: 3.0.0
+info:
+  title: IM Microservice API
+  version: 1.0.0
+paths:
+  /api/command:
+    post:
+      summary: Process a command
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                message:
+                  type: string
+                  example: "Turn on the light"
+      responses:
+        200:
+          description: Command processed successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  action:
+                    type: string
+                    example: "turn on the light"
+  /api/device-control:
+    post:
+      summary: Control a device
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                action:
+                  type: string
+                  example: "turn on the light"
+      responses:
+        200:
+          description: Device controlled successfully
+  /api/status:
+    get:
+      summary: Get the status of devices
+      responses:
+        200:
+          description: Current status of devices
