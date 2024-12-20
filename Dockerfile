@@ -18,7 +18,7 @@ ENV FLASK_RUN_HOST=0.0.0.0
 
 ENV TELEGRAM_BOT_TOKEN='7512146056:AAGHv1fbjAGI2crp8omo4j3WSbzKckso_ko'
 
-ENV TELEGRAM_WEBHOOK_URL='https://im-microservice.onrender.com/webhook'
+ENV TELEGRAM_WEBHOOK_URL=''
 
 # 啟動應用程式
 CMD ["python", "app.py"]
