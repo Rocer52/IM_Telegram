@@ -7,8 +7,8 @@ from nltk.stem import PorterStemmer
 app = Flask(__name__)
 
 # 讀取 Telegram Bot Token（從環境變數中取得）
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-TELEGRAM_API_URL = f"https://api.telegram.org/bot{BOT_TOKEN}"
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_API_URL = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}"
 
 # 初始化詞幹提取器
 stemmer = PorterStemmer()
