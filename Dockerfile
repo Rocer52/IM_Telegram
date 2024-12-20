@@ -16,7 +16,7 @@ EXPOSE 5000
 # 設定環境變數，告知 Flask 應用在公開模式下運行
 ENV FLASK_RUN_HOST=0.0.0.0
 
-ENV TELEGRAM_BOT_TOKEN='1234'
+ENV TELEGRAM_BOT_TOKEN=''
 
 # 啟動應用程式
 CMD ["python", "app.py"]
